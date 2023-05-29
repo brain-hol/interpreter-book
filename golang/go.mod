@@ -1,3 +1,3 @@
-module github.com/Brain-Hol/interpreter-book/golang
+module github.com/brain-hol/interpreter-book/golang
 
 go 1.20
