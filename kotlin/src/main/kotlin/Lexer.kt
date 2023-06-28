@@ -22,11 +22,17 @@ class Lexer(private val input: String) {
         skipWhitespace()
         val token = when(ch) {
             '=' -> Token.ASSIGN
+            '+' -> Token.PLUS
+            '-' -> Token.MINUS
+            '!' -> Token.BANG
+            '/' -> Token.SLASH
+            '*' -> Token.ASTERISK
+            '<' -> Token.LT
+            '>' -> Token.GT
             ';' -> Token.SEMICOLON
+            ',' -> Token.COMMA
             '(' -> Token.LPAREN
             ')' -> Token.RPAREN
-            ',' -> Token.COMMA
-            '+' -> Token.PLUS
             '{' -> Token.LBRACE
             '}' -> Token.RBRACE
             '\u0000' -> Token.EOF
